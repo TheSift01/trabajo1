@@ -1,0 +1,148 @@
+/*css global*/
+html, body, h1, h3, h4, ol, ul, li, a, p{
+    margin:0;
+    padding: 0;
+    font-family: Calibri,Arial;
+}
+
+body{
+    background-color: #FFFFE0;
+}
+/*cabezera*/
+.spaceheader {
+    background-color: khaki;
+    height: 45px;
+    padding-top: 0px;
+    padding-left: 100px;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.spaceheader a {
+    background-color: goldenrod;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    float:right ;
+}
+
+.spaceheader a:hover {
+    background-color: goldenrod;
+    color: lemonchiffon;
+}
+.spaceheader a.first {
+    float: left;
+    margin-left: 10px;
+}
+.spaceheader a.second {
+    float:right;
+    margin-right: 100px;
+}
+
+.spaceheader a.third {
+    margin-right: 20px;
+}
+.spaceheader img {
+    float:left;
+    width: 100px;
+    height: auto;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+/*imagen principal*/
+.imagen img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*index lo escrito de la pagina*/
+
+#contenedorindex {
+    width: 1000px;
+    height: auto;
+    padding: 100px;
+    background-color: khaki;
+    margin: auto;
+}
+
+#contenedorindex img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.textoglobal {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*footer general*/
+#footer{
+    float: left;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+#footer a{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#footer a:hover{
+    color: darkkhaki;
+}
+
+.cajasdefooter{
+    margin-top: 10px;
+    background-color: khaki;
+    height: 250px;
+    padding-top: 0px;
+    padding-left: 100px;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+/*imagenes de compra*/
+
+
+.contenedorTabla table tr td{
+    background-color: khaki;
+    text-align: center;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+
+/*inicio sesion*/
+
+#iniciodesesion{
+    background-color: khaki;
+    width: 300px;
+    margin: auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+.boton {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: goldenrod;
+    color: lemonchiffon;
+}
