@@ -5,75 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muebles de antaño</title>
     <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="spaceheader"> <!--cabezera de la pagina-->
-        <header id="header">
-            <img src="imagenes/logo.png" alt="Logo de la empresa">
-            <a href="index.html" class="first">Muebles de antaño</a>
-            <a href="galeria.html" class="second">Galeria</a>
-            <a href="login.html" class="third">Iniciar sesión</a>
+    <div> <!--cabezera de la pagina-->
+        <header>
+            <nav class="navbar navbar-expand-lg paranavbar">
+                <div class="container-fluid textonav">
+                    <img src="imagenes/logo.png" alt="logo">
+                  <a class="navbar-brand ml-auto" href="index.html">muebles de antaño</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">galeria</a>
+                      </li>
+                      <li class="nav-items">
+                        <a class="nav-link" href="login.html">iniciar sesion</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
     </div>
 
-    <div class="contenedorTabla"> <!--productos-->
+    <div> <!--imagen principal del index-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imagenes/imagenpromocional.jpg" class="d-block w-100" alt="promocional 1">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagenes/imagenpromocional2.jpg" class="d-block w-100" alt="promocional 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">siguiente</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="contenedorTabla">
         <table align="center">
             <tr>
                 <td>
-                    <h1 class="textoglobal">primera imagen</h1>
-                    <img src="imagenes/mueblegaleria1.png">
-                    <p class="textoglobal">precio: $15.000</p>
+                    <div class="card paracard" style="width: 18rem;">
+                        <img src="imagenes/mueblegaleria1.png" class="card-img-top">
+                        <div class="card-body paracard">
+                        <h5 class="textoglobal">Banquito de madera</h5>
+                        <p class="card-text textoglobal">Precio: $15.000</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>selecciona cuantos productos quiere llevar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
                 </td>
                 <td>
-                    <h1 class="textoglobal">primera imagen</h1>
-                    <img src="imagenes/mueblegaleria2.png">
-                    <p class="textoglobal">precio: 20.000</p>
+                    <div class="card paracard" style="width: 18rem;">
+                        <img src="imagenes/mueblegaleria2.png" class="card-img-top">
+                        <div class="card-body paracard">
+                        <h5 class="textoglobal">Mesilla de madera</h5>
+                        <p class="card-text textoglobal">Precio: $20.000</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>selecciona cuantos productos quiere llevar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
                 </td>
                 <td>
-                    <h1 class="textoglobal">primera imagen</h1>
-                    <img src="imagenes/mueblegaleria3.png">
-                    <p class="textoglobal">precio: 20.000</p>
+                    <div class="card paracard" style="width: 18rem;">
+                        <img src="imagenes/mueblegaleria3.png" class="card-img-top">
+                        <div class="card-body paracard">
+                        <h5 class="textoglobal">Escritorio</h5>
+                        <p class="card-text textoglobal">precio: $20.000</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>selecciona cuantos productos quiere llevar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label class="textoglobal">cantidad de compra:</label>
-                    <input type="number" id="cantidad" name="cantidad" required>
+                    <div class="card paracard" style="width: 18rem;">
+                        <img src="imagenes/mueblegaleria4.png" class="card-img-top">
+                        <div class="card-body paracard">
+                        <h5 class="textoglobal">Mesilla de madera</h5>
+                        <p class="card-text textoglobal">precio: 20.000</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>selecciona cuantos productos quiere llevar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
                 </td>
                 <td>
-                    <label class="textoglobal">cantidad de compra:</label>
-                    <input type="number" id="cantidad" name="cantidad" required>
+                    <div class="card paracard" style="width: 18rem;">
+                        <img src="imagenes/mueblegaleria5.png" class="card-img-top">
+                        <div class="card-body paracard">
+                        <h5 class="textoglobal">Alasena</h5>
+                        <p class="card-text textoglobal">precio: $35.000</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>selecciona cuantos productos quiere llevar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
                 </td>
                 <td>
-                    <label class="textoglobal">cantidad de compra:</label>
-                    <input type="number" id="cantidad" name="cantidad" required>
+                    <div class="card paracard" style="width: 18rem;">
+                        <img src="imagenes/mueblegaleria6.png" class="card-img-top">
+                        <div class="card-body paracard">
+                        <h5 class="textoglobal">Silla de madera</h5>
+                        <p class="card-text textoglobal">precio: $30.000</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>selecciona cuantos productos quiere llevar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
                 </td>
             </tr>
         </table>
-        
     </div>
 
-    <div class="cajasdefooter"> <!--footer de la pagina-->
-        <footer id="footer">
-            <h2 class="textoglobal">Servicios al cliente</h2>
-            <a href="#">Numeros de contacto</a>
-            <br>
-            <a href="#">Rastreo de pedido</a>
-            <br>
-            <a href="#">Informacion de tiendas</a>
-            <br>
-            <a href="#">Devolucion y garantiaz</a>
+    <div> <!--footer de la pagina-->
+        <footer>
+            <nav class="navbar navbar-expand-lg paranavbar">
+                <div class="container-fluid d-flex justify-content-center">
+                    <span class="textoglobal ">asignatura: programacion front end</span>
+                </div>
+            </nav>
         </footer>
-        <footer id="footer">
-            <h2 class="textoglobal">Servicios</h2>
-            <a href="#">Servicios de armado</a>
-            <br>
-            <a href="#">Herramientas de planificacion</a>
-            <br>
-            <a href="#">Servicios de despachos</a>
-            <br>
-            <a href="#">Servicios de cocina</a>
+        <footer class="footer paranavbar">
+            <div class="container footerletras">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="textoglobal">Servicios al cliente</h2>
+                        <ul>
+                            <li><a href="#">Numeros de contacto</a></li>
+                            <li><a href="#">Rastreo de pedido</a></li>
+                            <li><a href="#">Informacion de tiendas</a></li>
+                            <li><a href="#">Devolucion y garantiaz</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="textoglobal">Servicios</h2>
+                        <ul>
+                            <li><a href="#">Servicios de armado</a></li>
+                            <li><a href="#">Herramientas de planificacion</a></li>
+                            <li><a href="#">Servicios de despachos</a></li>
+                            <li><a href="#">Servicios de cocina</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
