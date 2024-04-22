@@ -42,22 +42,13 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.paracardimagen{
+    border-radius: 200px;
+}
 /*index lo escrito de la pagina*/
 
-#contenedorindex {
-    width: 1000px;
-    height: auto;
-    padding: 100px;
-    background-color: khaki;
-    margin: auto;
-}
-
-#contenedorindex img {
-    float: right;
-    width: 200px;
-    height: auto;
-    margin-top: 6px;
-    border-radius: 5px;
+.contenedorindex{
+    align-items:center;
 }
 
 .textoglobal {
@@ -65,17 +56,6 @@ body{
     text-decoration: none;
     font-size: 20px;
 }
-
-/*imagenes de compra*/
-
-
-.contenedorTabla table tr td{
-    background-color: khaki;
-    text-align: center;
-    padding: 10px;
-    margin-left: 100px;
-}
-
 
 /*inicio sesion*/
 
